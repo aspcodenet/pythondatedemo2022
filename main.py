@@ -1,6 +1,9 @@
 from datetime import datetime, timedelta
 
-
+print("Skriv in din födelsedag - ex 1972-08-03:")
+datum = input()
+dat = datetime.strptime(datum, "%Y-%m-%d" )
+diff = datetime.now() - dat
 
 
 fakturaDatum = datetime.now()
